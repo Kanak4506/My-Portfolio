@@ -2,65 +2,118 @@
 import { ref } from "vue";
 import "primeicons/primeicons.css";
 import Email from "./portfolioContact.vue";
+import CertificateSection from "./certificateSection.vue";
 
 const myProjects = ref([
+   // ⚡ Featured Projects
    {
-      imageLocation: "/assets/images/solarSystem.png",
-      title: "Solar System",
-      redirectLink: "https://mysolarsystem-psi.vercel.app/",
-      tech: 'HTML | CSS | JS'
+      imageLocation: "/assets/images/erp.png",
+      title: "Smart School ERP System",
+      redirectLink: "https://www.roshnieducation.com/principal",
+      tech: 'Vue Js | Tailwind CSS | Node JS | Express JS | MongoDb'
    },
    {
+      imageLocation: "/assets/images/companyProfile.png",
+      title: "Company Profile for Satyaansh Softech",
+      redirectLink: "https://www.satyaanshSoftech.com",
+      tech: 'React JS | Prime React'
+   },
+   {
+      imageLocation: "/assets/images/fakeNewsDetector.png",
+      title: "Fake News Detection using ML",
+      redirectLink: "https://www.roshnieducation.com",
+      tech: 'Python | Machine Learning | Pandas'
+   },
+
+   // 📊 Data Dashboards
+   {
+      imageLocation: "/assets/images/hospitalDashboard.png",
+      title: "Hospital Analytics Dashboard",
+      redirectLink: "https://github.com/Kanak4506/Hospital-Frontend",
+      tech: 'Vue Js | Tailwind CSS | Node JS | Express JS | DuckDB'
+   },
+   {
+      imageLocation: "/assets/images/dashboard.png",
+      title: "CoreUI Data Dashboard",
+      redirectLink: "https://github.com/Kanak4506/CoreUI-Dashboard",
+      tech: 'Vue Js | Tailwind CSS | Node JS | Express JS | PostgreSQL'
+   },
+
+   // 🛒 E-Commerce & Utility Apps
+   {
+      imageLocation: "/assets/images/tomato.png",
+      title: "Tomato - Food Delivery App",
+      redirectLink: "https://github.com/Kanak4506/Food-Delivery--Tomato-----Frontend",
+      tech: 'MERN Stack'
+   },
+   {
+      imageLocation: "/assets/images/fruitable.png",
+      title: "Fruitables - Grocery UI",
+      redirectLink: "https://github.com/Kanak4506/15.-Vue-Project",
+      tech: 'Vue Js | Tailwind | Node JS'
+   },
+   {
+      imageLocation: "/assets/images/paint.png",
+      title: "Color Splash - Paint App",
+      redirectLink: "https://github.com/Kanak4506/Paint-Project",
+      tech: 'Vue Js | Tailwind CSS | PrimeVue'
+   },
+   {
+      imageLocation: "/assets/images/edWeb.png",
+      title: "Educational Portal for Roshni",
+      redirectLink: "https://www.roshnieducation.com",
+      tech: 'Vue Js | Tailwind CSS | PrimeVue | Nodemailer'
+   },
+
+   // 💬 Real-Time & Interactive Apps
+   {
+      imageLocation: "/assets/images/chat.png",
+      title: "Chatty - Real-time Messaging App",
+      redirectLink: "https://github.com/Kanak4506/Real-Chat-Application---Chatty",
+      tech: 'MERN Stack'
+   },
+   {
+      imageLocation: "/assets/images/dashboard.png",
+      title: "SpendSmart - Expense Tracker",
+      redirectLink: "https://github.com/Kanak4506/RN---SpendSmart---Frontend",
+      tech: 'React Native | Expo | Node JS'
+   },
+
+   // 🌦️ Mini Web Utilities
+   {
       imageLocation: "/assets/images/weather.png",
-      title: "Weather Forecast",
+      title: "SkyCast - Weather Forecast App",
       redirectLink: "https://weather-six-ivory.vercel.app/",
       tech: 'HTML | CSS | JS | Rest APIs'
    },
    {
-      imageLocation: "/assets/images/yoga.png",
-      title: "Relaxo -Yoga",
-      redirectLink: "https://jo-hoga-yoga-se-hoga.vercel.app/",
+      imageLocation: "/assets/images/rockPaper.png",
+      title: "Rock-Paper-Scissors Game",
+      redirectLink: "https://github.com/Kanak4506/rock-paper-game",
+      tech: 'Vue Js | Tailwind CSS'
+   },
+   {
+      imageLocation: "/assets/images/solarSystem.png",
+      title: "Interactive Solar System Model",
+      redirectLink: "https://mysolarsystem-psi.vercel.app/",
       tech: 'HTML | CSS | JS'
    },
    {
       imageLocation: "/assets/images/dirEngine.png",
-      title: "DirEngine-Travel",
+      title: "DirEngine - Travel Advisor",
       redirectLink: "https://direngine.vercel.app/",
       tech: 'HTML | CSS | JS'
    },
-   // Khali Vue
-   // {
-   //    imageLocation: "/assets/images/rockPaper.png",
-   //    title: "Rock-Paper Game",
-   //    redirectLink: "https://github.com/Kanak4506/rock-paper-game",
-   //    tech: 'Vue Js | Tailwind CSS'
-   // },
-   // React 
    {
-      imageLocation: "/assets/images/tomato.png",
-      title: "E-commerce Food App",
-      redirectLink: "https://github.com/Kanak4506/Food-Delivery--Tomato-----Frontend",
-      tech: 'MERN'
-   },
-   {
-      imageLocation: "/assets/images/chat.png",
-      title: "Chat Application",
-      redirectLink: "https://github.com/Kanak4506/Real-Chat-Application---Chatty",
-      tech: 'MERN'
-   },
-   {
-      imageLocation: "/assets/images/hospitalDashboard.png",
-      title: "Data Analysis Dashboard",
-      redirectLink: "https://github.com/Kanak4506/Hospital-Frontend",
-      tech: 'Vue Js | Tailwind CSS | Node JS | Express JS |DuckDb'
-   },
-    {
-      imageLocation: "/assets/images/erp.png",
-      title: "ERP for School",
-      redirectLink: "https://www.roshnieducation.com/principal",
-      tech: 'Vue Js | Tailwind CSS | Node JS | Express JS | MongoDb'
+      imageLocation: "/assets/images/yoga.png",
+      title: "Relaxo - Yoga for Peace",
+      redirectLink: "https://jo-hoga-yoga-se-hoga.vercel.app/",
+      tech: 'HTML | CSS | JS'
    },
 ])
+
+const showCertModal = ref(false);
+
 </script>
 
 <template>
@@ -165,7 +218,7 @@ const myProjects = ref([
          <!-- # My Projects -->
          <div id="project">
             <span class="tw-text-3xl tw-font-bold">My Projects</span>
-            <div class="lg:tw-justify- tw-my-10 tw-flex  tw-flex-wrap tw-justify-between sm:tw-gap-24">
+            <div class="tw-gap-10 tw-justify-center tw-my-10 tw-flex  tw-flex-wrap sm:tw-justify-between sm:tw-gap-24">
                <!-- # Projects -->
                <div v-for="(each, index) in myProjects" :key="index"
                   class="tw-group tw-flex-col tw-flex tw-relative tw-cursor-pointer tw-overflow-hidden tw-rounded">
@@ -179,11 +232,12 @@ const myProjects = ref([
                         </a>
                      </div>
                   </div>
-                  <span class="tw-font-yatra">{{ each.title }}</span>
-                  <span class="tw-italic tw-text-xs tw-w-[200px]">{{ each.tech }}</span>
+                  <span class="tw-font-yatra  tw-max-w-[200px]">{{ each.title }}</span>
+                  <span class="tw-italic tw-text-xs  tw-max-w-[200px]">{{ each.tech }}</span>
                </div>
             </div>
          </div>
+         <CertificateSection />
 
          <!-- # Contact Me -->
          <Email />

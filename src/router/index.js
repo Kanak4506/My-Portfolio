@@ -16,17 +16,6 @@ const router = createRouter({
                name: "portfolio",
                component: () => import("@/pages/Portfolio/portfolio.vue"),
             },
-            // {
-            //    path: "content",
-            //    name: "content",
-            //    component: () => import("@/pages/Home/Content.vue"),
-            // },
-            {
-               path: "test",
-               name: "test",
-               component: () => import("@/pages/Test/test.vue"),
-            },
-            
          ],
       },
    ],

@@ -1,1 +1,0 @@
-import{s as t}from"./index-Cu7npdZj.js";import{c as e,d as s,u as r,o as a}from"./index-CC3FLbwj.js";const o={class:"card flex justify-center"},_={__name:"test",setup(n){return(i,c)=>(a(),e("div",o,[s(r(t),{style:{width:"50px",height:"50px"},strokeWidth:"8",fill:"transparent",animationDuration:".5s","aria-label":"Custom ProgressSpinner"})]))}};export{_ as default};
