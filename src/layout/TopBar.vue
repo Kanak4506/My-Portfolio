@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="tw-flex tw-text-white tw-bg-black tw-items-center tw-justify-between tw-p-5">
+    <div class="tw-flex tw-scroll-smooth tw-text-white tw-bg-black tw-items-center tw-justify-between tw-p-5">
         <div class="tw-font-bold tw-text-3xl">
             <span class="tw-text-[#e60e50]">K</span><span >anak.</span>
         </div>

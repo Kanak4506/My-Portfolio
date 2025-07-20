@@ -112,12 +112,10 @@ const myProjects = ref([
    },
 ])
 
-const showCertModal = ref(false);
-
 </script>
 
 <template>
-   <div class="tw-flex tw-justify-center tw-bg-black tw-text-white">
+   <div class="tw-scroll-smooth tw-flex tw-justify-center tw-bg-black tw-text-white">
       <div class="tw-w-5/6">
          <!-- # Intro -->
          <div id="about" class="tw-flex tw-items-center tw-justify-between">
