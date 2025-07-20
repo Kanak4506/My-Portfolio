@@ -107,7 +107,7 @@ const myProjects = ref([
    {
       imageLocation: "/assets/images/yoga.png",
       title: "Relaxo - Yoga for Peace",
-      redirectLink: "https://jo-hoga-yoga-se-hoga.vercel.app/",
+      redirectLink: "https://github.com/Kanak4506/jo-hoga-yoga-se-hoga",
       tech: 'HTML | CSS | JS'
    },
 ])
